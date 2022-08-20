@@ -6,11 +6,12 @@ import Login from '../Interfaces/ILogin';
 class LoginService {
   public static createToken = async (USER: Login): Promise<string | boolean> => {
     const { email, password } = USER;
-    const verify = await user.findOne({ where: { email, password } });
+    const verify = await user.findOne({ where: { email } });
     if (!verify) return false;
 
-    await bcrypt.compare('B4c0//', String(verify?.password));
-    const token: string = jwtService(verify);
+    const test = await bcrypt.compare(password, verify.password);
+    if (!test) return false;
+    const token: string = jwtService.generateToken({ email, password });
 
     return token;
   };

@@ -1,12 +1,15 @@
 import { sign } from 'jsonwebtoken';
 import Login from '../Interfaces/ILogin';
 
-const jwtSecret = 'jwt_secret';
+class JwtService {
+  static generateToken(payload: Login): string {
+    return sign(payload, String(process.env.JWT_SECRET));
+  }
+}
+// const generateToken = (user: Login) => {
+//   const token = sign({ user }, jwtSecret);
 
-const generateToken = (user: Login) => {
-  const token = sign({ user }, jwtSecret);
+//   return token;
+// };
 
-  return token;
-};
-
-export default generateToken;
+export default JwtService;
