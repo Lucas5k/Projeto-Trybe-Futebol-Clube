@@ -1,4 +1,4 @@
-class Login {
+interface Login {
   email: string;
   password: string;
 }

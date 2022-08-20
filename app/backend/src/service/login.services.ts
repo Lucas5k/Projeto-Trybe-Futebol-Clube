@@ -8,7 +8,9 @@ class LoginService {
     const { email, password } = Valited;
     const verifyInfos = await user.findOne({ where: { email } });
 
-    if (!email || !password) return { code: 400, message: 'All fields must be filled' };
+    if (!email || !password) {
+      return { code: 400, message: 'All fields must be filled' };
+    }
     if (!verifyInfos || !verifyInfos.password) {
       return { code: 401, message: 'Incorrect email or password' };
     }
