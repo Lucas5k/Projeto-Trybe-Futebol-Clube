@@ -6,5 +6,7 @@ const routerMatch = Router();
 const MATCHCONTROLLER = new MatchController();
 
 routerMatch.get('/', MATCHCONTROLLER.getMatch);
+routerMatch.post('/', MATCHCONTROLLER.postMatch);
+routerMatch.patch('/:id/finish', MATCHCONTROLLER.finishMatch);
 
 export default routerMatch;
