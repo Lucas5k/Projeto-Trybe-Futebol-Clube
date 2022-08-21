@@ -2,6 +2,7 @@ import * as express from 'express';
 import middlewareError from './middlewareError/middlewareError';
 import routerAdmin from './Routers/login.Admin.Router';
 import routerLogin from './Routers/login.Router';
+import routerMatch from './Routers/match.Router';
 import routerTeam from './Routers/teams.Router';
 
 class App {
@@ -29,6 +30,7 @@ class App {
     this.app.use('/login', routerLogin);
     this.app.use('/login/validate', routerAdmin);
     this.app.use('/teams', routerTeam);
+    this.app.use('/matches', routerMatch);
     this.app.use(middlewareError);
   }
 
