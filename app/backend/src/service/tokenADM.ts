@@ -1,0 +1,5 @@
+const tokenADM = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInBhc3N3b3JkIjoic2
+VjcmV0X2FkbWluIiwiaWF0IjoxNjYxMDMzNTU2fQ.52IbyWzsAwL5KSQzbalRpuerOx9GzT046S024yXBtX0`;
+
+export default tokenADM;

@@ -1,5 +1,6 @@
 import * as express from 'express';
 import middlewareError from './middlewareError/middlewareError';
+import routerAdmin from './Routers/login.Admin.Router';
 import routerLogin from './Routers/login.Router';
 
 class App {
@@ -25,6 +26,7 @@ class App {
     this.app.use(express.json());
     this.app.use(accessControl);
     this.app.use('/login', routerLogin);
+    this.app.use('/login/validate', routerAdmin);
     this.app.use(middlewareError);
   }
 
