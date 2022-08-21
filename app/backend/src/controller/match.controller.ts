@@ -29,6 +29,13 @@ class MatchController {
 
     res.status(200).json({ message: 'Finished' });
   };
+
+  public updatedMatch = async (req: Request, res: Response): Promise<void> => {
+    const { id } = req.params;
+    await MatchService.updatedMatch(Number(id), req.body);
+
+    res.status(200).json({ message: 'Deu Certo!' });
+  };
 }
 
 export default MatchController;

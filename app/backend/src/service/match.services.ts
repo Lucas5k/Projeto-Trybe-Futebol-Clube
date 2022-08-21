@@ -3,6 +3,7 @@ import IReturnMatch from '../Interfaces/IReturnMatch';
 import match from '../database/models/match';
 import team from '../database/models/team';
 import ICreateMatch from '../Interfaces/ICreateMatch';
+import IUpdatedMatch from '../Interfaces/IUpdatedMatch';
 
 class MatchService {
   public static ValidatedMatches = async (data: ICreateMatch) => {
@@ -47,6 +48,14 @@ class MatchService {
   public static finishMatch = async (id: number): Promise<void> => {
     await match.update({
       inProgress: false,
+    }, { where: { id } });
+  };
+
+  public static updatedMatch = async (id: number, updated: IUpdatedMatch): Promise<void> => {
+    const { homeTeamGoals, awayTeamGoals } = updated;
+    await match.update({
+      homeTeamGoals,
+      awayTeamGoals,
     }, { where: { id } });
   };
 }

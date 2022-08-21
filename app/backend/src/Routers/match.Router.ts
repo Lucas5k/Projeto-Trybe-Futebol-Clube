@@ -8,5 +8,6 @@ const MATCHCONTROLLER = new MatchController();
 routerMatch.get('/', MATCHCONTROLLER.getMatch);
 routerMatch.post('/', MATCHCONTROLLER.postMatch);
 routerMatch.patch('/:id/finish', MATCHCONTROLLER.finishMatch);
+routerMatch.patch('/:id', MATCHCONTROLLER.updatedMatch);
 
 export default routerMatch;
