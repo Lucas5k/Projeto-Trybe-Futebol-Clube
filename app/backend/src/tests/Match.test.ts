@@ -6,6 +6,8 @@ import createMock from '../Mocks/MatchCreate';
 import chaiHttp = require('chai-http');
 import { app } from '../app';
 import IMatch from '../Interfaces/IMatch';
+import jwtService from '../service/jwtServices';
+import { requestMock } from '../Mocks/MatchCreate';
 
 chai.use(chaiHttp);
 
@@ -32,5 +34,25 @@ describe('#Match', () => {
       chai.expect(body.awayTeamGoals).to.deep.eq(createMock.awayTeamGoals);
       chai.expect(body.inProgress).to.be.eq(true)
     });
+  });
+  describe('create', () => {
+    beforeEach(() => {
+      Sinon.stub(match, 'create').resolves(createMock);
+      Sinon.stub(jwtService, 'verifyToken').returns('any-token');
+    });
+
+    afterEach(() => {
+      Sinon.restore();
+    });
+
+    it('ao mandar no body da requisição dados corretos se retorna os dados corretos', async () => {
+      const response = await chai.request(app).post('/matches').send(requestMock);
+
+      const JWT = jwtService.verifyToken('anys-token');
+
+      chai.expect(JWT).to.equal('any-token')
+      chai.expect(response.status).to.eq(201);
+      chai.expect(response.body).to.deep.eq(createMock);
+    })
   })
 })
