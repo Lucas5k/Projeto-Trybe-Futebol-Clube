@@ -1,0 +1,36 @@
+import * as chai from 'chai';
+import * as Sinon from 'sinon';
+import match from '../database/models/match';
+import createMock from '../Mocks/MatchCreate';
+// @ts-ignore import chaiHttp = require('chai-http');
+import chaiHttp = require('chai-http');
+import { app } from '../app';
+import IMatch from '../Interfaces/IMatch';
+
+chai.use(chaiHttp);
+
+describe('#Match', () => {
+  describe('findAll', () => {
+    beforeEach(() => {
+      Sinon.stub(match, 'findAll').resolves([createMock])
+    });
+
+    afterEach(() => {
+      Sinon.restore();
+    });
+
+    it('se ao fazer a requisição se retorna os corretamente', async () => {
+      const response = await chai.request(app).get('/matches');
+
+      const [body] = response.body as IMatch[]
+
+      chai.expect(response.status).to.equal(200);
+      chai.expect(body.id).to.deep.equal(createMock.id);
+      chai.expect(body.homeTeam).to.deep.equal(createMock.homeTeam);
+      chai.expect(body.homeTeamGoals).to.deep.equal(createMock.homeTeamGoals);
+      chai.expect(body.awayTeam).to.deep.equal(createMock.awayTeam);
+      chai.expect(body.awayTeamGoals).to.deep.eq(createMock.awayTeamGoals);
+      chai.expect(body.inProgress).to.be.eq(true)
+    });
+  })
+})
