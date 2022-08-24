@@ -1,5 +1,6 @@
 import * as express from 'express';
 import middlewareError from './middlewareError/middlewareError';
+import routerLeader from './Routers/leaderBoard.Router';
 import routerAdmin from './Routers/login.Admin.Router';
 import routerLogin from './Routers/login.Router';
 import routerMatch from './Routers/match.Router';
@@ -31,6 +32,7 @@ class App {
     this.app.use('/login/validate', routerAdmin);
     this.app.use('/teams', routerTeam);
     this.app.use('/matches', routerMatch);
+    this.app.use('/leaderboard/home', routerLeader);
     this.app.use(middlewareError);
   }
 

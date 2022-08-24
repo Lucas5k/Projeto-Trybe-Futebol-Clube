@@ -1,10 +1,10 @@
 interface Match {
   id?: number;
   homeTeam: number;
-  homeTeamGoal: number;
-  awayTea: number;
-  awayTeamGoal: number;
-  inProgres: boolean;
+  homeTeamGoals: number;
+  awayTeam: number;
+  awayTeamGoals: number;
+  inProgress: boolean;
   teamHome: {
     teamName: string;
   },
