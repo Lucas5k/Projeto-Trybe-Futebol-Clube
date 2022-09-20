@@ -14,7 +14,7 @@
 ## :books: Funcionalidades
 * <b>Funcionalidade 1 Usuários</b>: Criação e validação do usuário;
 * <b>Funcionalidade 2 Times</b>: Listar todos ou Listar um Time em especifico;
-* <b>Funcionalidade 3 Partidas</b>: Listar, Criar, Atualizar uma partida diferente;
+* <b>Funcionalidade 3 Partidas</b>: Listar, Criar, Atualizar uma partida;
 * <b>Funcionalidade 4 Placar</b>: Listar Placares;
 
 ## :wrench: Tecnologias utilizadas
