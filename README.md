@@ -43,6 +43,12 @@ compose:up:dev
 - Para entrar seja em back ou em front
 cd app e depois cd/backend ou cd/frontend
 
+- Para acessar no front-end
+Basta inserir o email, senha e fazer o login.
+
+Email: admin@admin.com
+Senha: secret_admin
+
 -aviso
 Se estiver na raiz do projeto e o lint estiver reclamando, é pelo fato de estar na raiz mesmo, quando entrar em back ou em front o lint para.
 ```
@@ -53,6 +59,7 @@ Se estiver na raiz do projeto e o lint estiver reclamando, é pelo fato de estar
 
 ## :soon: Implementação futura
 * Refatorar o código, e aprimorar meus conhecimentos em SOLID e aplicar no mesmo.
+* Corrigir alguns Bugs na aplicação.
 
 ## :handshake: Projeto feito individualmente:
 
