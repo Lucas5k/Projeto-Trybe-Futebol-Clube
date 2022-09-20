@@ -29,17 +29,22 @@
 Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
 ```
 - Clone o repositório
-git clone git@github.com:Lucas5k/Projeto-TrybeWallet.git
+git clone git@github.com:Lucas5k/Projeto-Trybe-Futebol-Clube.git
 
 - Entre no arquivo do projeto
-cd Projeto-TrybeWallet
+cd Projeto-Trybe-Futebol-Clube
 
 - Instale as dependências
 npm install
 
 - Inicialize o projeto
-npm start
+compose:up:dev
 
+- Para entrar seja em back ou em front
+cd app e depois cd/backend ou cd/frontend
+
+-aviso
+Se estiver na raiz do projeto e o lint estiver reclamando, é pelo fato de estar na raiz mesmo, quando entrar em back ou em front o lint para.
 ```
 
 ## Rodando na Web:
