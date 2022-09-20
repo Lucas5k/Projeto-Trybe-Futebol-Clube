@@ -64,3 +64,4 @@ Se estiver na raiz do projeto e o lint estiver reclamando, é pelo fato de estar
 ## :handshake: Projeto feito individualmente:
 
 <!-- ## :dart: Status do projeto -->
+OBS: Toda a Parte de front-end foi disponibilizada pela Trybe, o meu papel foi somente implementar o Back-end!!!
