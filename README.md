@@ -1,17 +1,29 @@
 # Projeto-Trybe-Futebol-Clube
 
 ## :memo: Descrição
-<p>Esse foi meu sexto projeto no modúlo de front-end, No mesmo desenvolvi uma carteira de controle de gastos com conversor de moedas internacionais,
-e fazer a conversão para a moeda de escolha!</p>
+<p>Esse foi meu décimo projeto de back-end, Esse projeto foi um resumo de tudo que aprendi no modúlo de back-end. Nesse Projeto consolidei meus conhecimentos sobre Arquitetura de Camadas(MSC, MVC ou Controller-Service-Repository) tem siglas diferentes, mais com o mesmo propósito, utilizei a arquitetura RESTAPI como boas práticas na hora da construção da api. Também utilizei a ferramenta Sequelize ORM(Object Relational Mapping), para lidar com os dados estruturados no banco de dados. Usei o json web token(JWT) para fazer a autenticação do usuário. Utilizei o typeScript(Programação orientada a objetos) e alguns dos principios do SOLID. E por último mais não menos importante realizei testes de integração na aplicação!
+
+  <h2>Esse projeto é composto de 4 seções principais:</h2>
+
+  - Usuários(Users) e Login
+  - Times(Teams)
+  - Partidas(Matches)
+  - Placar(Leaderboard)
+</p>
 
 ## :books: Funcionalidades
-* <b>Funcionalidade 1</b>: Adicionar, remover um gasto;
-* <b>Funcionalidade 2</b>: Visualizar uma tabelas com seus gastos;
-* <b>Funcionalidade 3</b>: Visualizar o total de gastos convertidos para uma moeda de escolha;
+* <b>Funcionalidade 1 Usuários</b>: Criação e validação do usuário;
+* <b>Funcionalidade 2 Times</b>: Listar todos ou Listar um Time em especifico;
+* <b>Funcionalidade 3 Partidas</b>: Listar, Criar, Atualizar uma partida diferente;
+* <b>Funcionalidade 4 Placar</b>: Listar Placares;
 
 ## :wrench: Tecnologias utilizadas
-* React (componente de classe)
-* Redux para fazer o gerenciamento de estado!
+* Node.js
+* TypeScript
+* JWT
+* Mysql
+* Express.js
+* Docker
 
 ## :rocket: Rodando o projeto
 Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
@@ -34,8 +46,8 @@ npm start
 
 <a href="https://projeto-trybe-wallet.vercel.app/">Clique aqui</a><p>para ver a versão final do nosso projeto no seu navegador.</p>
 
-<!-- ## :soon: Implementação futura
-* O que será implementado na próxima sprint? -->
+## :soon: Implementação futura
+* Refatorar o código, e aprimorar meus conhecimentos em SOLID e aplicar no mesmo.
 
 ## :handshake: Projeto feito individualmente:
 
