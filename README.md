@@ -49,7 +49,7 @@ Se estiver na raiz do projeto e o lint estiver reclamando, é pelo fato de estar
 
 ## Rodando na Web:
 
-<a href="https://projeto-trybe-wallet.vercel.app/">Clique aqui</a><p>para ver a versão final do nosso projeto no seu navegador.</p>
+<a href="https://projeto-trybe-futebol-clube-om4fyh8rj-lucas5k.vercel.app/login">Clique aqui</a><p>para ver a versão final do nosso projeto no seu navegador.</p>
 
 ## :soon: Implementação futura
 * Refatorar o código, e aprimorar meus conhecimentos em SOLID e aplicar no mesmo.
