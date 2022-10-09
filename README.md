@@ -23,6 +23,7 @@
 * JWT
 * Mysql
 * Express.js
+* Mocha/Chai e Sinon
 * Docker
 
 ## :rocket: Rodando o projeto
