@@ -1,7 +1,7 @@
 # Projeto-Trybe-Futebol-Clube
 
 ## :memo: Descrição
-<p>Esse foi meu décimo projeto de back-end, Esse projeto foi um resumo de tudo que aprendi no módulo de back-end. Nesse Projeto consolidei meus conhecimentos sobre Arquitetura de Camadas(MSC, MVC ou Controller-Service-Repository) tem siglas diferentes, mais com o mesmo propósito, utilizei a arquitetura RESTAPI como boas práticas na hora da construção da api. Também utilizei a ferramenta Sequelize ORM(Object Relational Mapping), para lidar com os dados estruturados no banco de dados. Usei o json web token(JWT) para fazer a autenticação do usuário. Utilizei o typeScript(Programação orientada a objetos) e alguns dos principios do SOLID. E por último mais não menos importante realizei testes de integração na aplicação!
+<p>Esse foi meu décimo projeto de back-end, Esse projeto foi um resumo de tudo que aprendi no módulo de back-end. Nesse Projeto consolidei meus conhecimentos sobre Arquitetura de Camadas(MSC, MVC ou Controller-Service-Repository) tem siglas diferentes, mais com o mesmo propósito, utilizei a arquitetura RESTAPI na construção da api. Também utilizei a ferramenta Sequelize ORM(Object Relational Mapping), para lidar com os dados estruturados no banco de dados. Usei o json web token(JWT) para fazer a autenticação do usuário. Utilizei o typeScript(Programação orientada a objetos) e alguns dos principios do SOLID. E por último mais não menos importante realizei testes de integração na aplicação!
 
   <h2>Esse projeto é composto de 4 seções principais:</h2>
 
