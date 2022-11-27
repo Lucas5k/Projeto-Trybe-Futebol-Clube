@@ -5,10 +5,10 @@
 
   <h2>Esse projeto é composto de 4 seções principais:</h2>
 
-  - Usuários(Users) e Login
-  - Times(Teams)
-  - Partidas(Matches)
-  - Placar(Leaderboard)
+  <ol>Usuários(Users) e Login</ol>
+  <ol>Times(Teams)</ol>
+  <ol>Partidas(Matches)</ol>
+  <ol>Placar(Leaderboard)</ol>
 </p>
 
 ## :books: Funcionalidades
