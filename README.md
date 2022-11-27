@@ -59,8 +59,8 @@ Se estiver na raiz do projeto e o lint estiver reclamando, é pelo fato de estar
 <a href="https://projeto-trybe-futebol-clube-om4fyh8rj-lucas5k.vercel.app/login">Clique aqui</a><p>para ver a versão final do nosso projeto no seu navegador.</p>
 
 ## :soon: Implementação futura
-* Refatorar o código, e aprimorar meus conhecimentos em SOLID e aplicar no mesmo.
-* Corrigir alguns Bugs na aplicação.
+<ol>Refatorar o código, e aprimorar meus conhecimentos em SOLID e aplicar no mesmo.</ol>
+<ol>Corrigir alguns Bugs na aplicação.</ol>
 
 ## :handshake: Projeto feito individualmente:
 
