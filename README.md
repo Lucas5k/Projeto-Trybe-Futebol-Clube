@@ -12,12 +12,12 @@
 </p>
 
 ## :books: Funcionalidades
-* <b>Funcionalidade 1 Usuários</b>: Criação e validação do usuário;
-* <b>Funcionalidade 2 Times</b>: Listar todos ou Listar um Time em especifico;
-* <b>Funcionalidade 3 Partidas</b>: Listar, Criar, Atualizar uma partida;
-* <b>Funcionalidade 4 Placar</b>: Listar Placares;
+<ol><b>Funcionalidade 1 Usuários</b>: Criação e validação do usuário;</ol>
+<ol><b>Funcionalidade 2 Times</b>: Listar todos ou Listar um Time em especifico;</ol>
+<ol><b>Funcionalidade 3 Partidas</b>: Listar, Criar, Atualizar uma partida;</ol>
+<ol><b>Funcionalidade 4 Placar</b>: Listar Placares;</ol>
 
-## :wrench: <h3>Tecnologias utilizadas</h3>
+## <h3>:wrench: Tecnologias utilizadas</h3>
 * Node.js
 * TypeScript
 * JWT
