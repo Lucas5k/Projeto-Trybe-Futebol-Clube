@@ -17,7 +17,7 @@
 * <b>Funcionalidade 3 Partidas</b>: Listar, Criar, Atualizar uma partida;
 * <b>Funcionalidade 4 Placar</b>: Listar Placares;
 
-## :wrench: Tecnologias utilizadas
+## :wrench: <h3>Tecnologias utilizadas</h3>
 * Node.js
 * TypeScript
 * JWT
